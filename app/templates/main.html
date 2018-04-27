@@ -33,9 +33,9 @@
 					</div>
 				</th>				
 			</tr>			
-		</thead>		
-		{% for edit_form in edit_forms %}
+		</thead>	
 		<tbody>	
+		{% for edit_form in edit_forms %}
 			<tr class="{{ loop.cycle('warning', 'success') }}">
 				<td>{{ edit_form.edit_time.data }}</td>
 				<td>
@@ -88,8 +88,8 @@
 					</div>
 				</td>
 			</tr>
-		</tbody>
 		{% endfor %}
+		</tbody>
 	</table>
 </div>
 </body>
